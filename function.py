@@ -33,3 +33,23 @@ def dsum2(a, b):
 
 d = dsum2(5, 4)
 print(d)
+
+
+###########################################
+
+################Hola bot###################
+#Say "Buenos dias" until 11.
+#Say "Buenas tardes" until 18.
+#Say "Buenas noches" until 24.
+
+def hola(name, time):
+    if time < 12:
+        print("Buenos dias, " + name)
+    elif time >=12 and time <=18:
+        print("Buenas tardes, " + name)
+    else:
+        print("Buenas noches, " + name)
+
+hola("Sr.Pedro", 10)
+hola("Don quichotte", 14)
+hola("Sra.Belle", 20)
