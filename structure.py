@@ -50,3 +50,30 @@ print("hello" in y)     # judge the element is in list; TRUE or FALSE
 
 if "hello" in y:
     print("hello exists in the list.")
+
+
+#################### tuple ####################
+
+x = tuple()
+y = ()
+
+print(x)
+print(y)                # technically "list" and "tuple" are very similar.
+
+
+x = (1, 2, 3)
+y = ('a', 'b', 'c')
+z = (1, "hello", "there")
+
+print(x)
+print(y)
+print(z)
+
+print(x + y)
+print('a' in y)
+print(z.index(1))
+
+# "tuple" adject does not support item assignment.
+# this means, it can not change any element in tuple.
+# this is the most biggest difference between "list" and "tuple": "list" is mutable and "tuple" is immutable.
+
