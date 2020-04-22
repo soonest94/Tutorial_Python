@@ -77,3 +77,50 @@ print(z.index(1))
 # this means, it can not change any element in tuple.
 # this is the most biggest difference between "list" and "tuple": "list" is mutable and "tuple" is immutable.
 
+
+################## dictionary ##################
+
+x = dict()
+y = {}
+
+print(x)
+print(y)                # dictionary is also similar with list and tuple.
+
+
+x = {
+    "name": "Sergio",
+    "age": 20,
+    }                   # dictionary is composed with "key" and "value".
+
+print(x["name"])        # "name" is a key and "Sergio" is the value for that key.
+print(x["age"])         # "age" is a key and "20" is the value for that key.
+
+# "key" is always immutable. this means, "list" can not be a key.
+
+x = {
+    0: "Andreo",
+    1: "Hola",
+    "age": 20,
+    }
+
+print(x[0])
+print(x[1])
+print(x["age"])
+
+print("age" in x)
+print("name" in x)
+
+print(x.keys())         # show all keys in a dictionary.
+print(x.values())       # show all values in a dictionary.
+
+for key in x:
+    print("key: " + str(key))
+    print("value: " + str(x[key]))
+
+# dictionary support item assignment.
+
+x[0] = "Berlin"
+print(x)
+
+x["Actor"] = "Pedro Alonso"
+print(x)
