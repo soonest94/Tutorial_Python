@@ -49,3 +49,32 @@ Rogers.say_hello("Peggy")
 Banner.say_hello("Betty")
 
 Stark.introduce()
+
+
+############### inheritance ###############
+print("\n inheritance")
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print("I am " + self.name + " and I am " + str(self.age) + "years old.")
+
+class Police(Person):
+    def arrest(self, to_arrest):
+        print("You are under arrest, " + to_arrest)
+
+class Programmer(Person):
+    def program(self, to_program):
+        print("What should I do next? Ah, I'm gonna make " + to_program)
+
+Parker = Person("Peter", 20)
+Romanoff = Police("Natasha", 21)
+Strange = Programmer("Steve", 22)
+
+Parker.introduce()
+Romanoff.introduce()            # Even Romanoff is in Police class, we can use func in Person class cuz Police is belong to Person so it inherited all funcs from Person class.
+Romanoff.arrest("Parker")
+Strange.introduce()
+Strange.program("e-mail client")
